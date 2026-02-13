@@ -29,11 +29,12 @@ def min_max(abcdef):
 
 #Defining function to check that numbers are not in middle and are at end of plate
 def numeric(xyz):
+    
     #Creating nested loop to check sequentially whether each character is a number
     for character in xyz: #Outer loop to check through each character
-
         numbers = "0123456789"
-        for number in numbers: #Inner loop to check whether character is a number 0-9
+        
+    				for number in numbers: #Inner loop to check whether character is a number 0-9
             if character == number and number == "0":
                 return False #Breaking function if first encountered numeric character is a 0
             elif character == number:
